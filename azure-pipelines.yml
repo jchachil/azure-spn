@@ -13,7 +13,8 @@ steps:
 
 - task: AzureCLI@2
   inputs:
-    azureSubscription: 'Azure-SPN-Connection'
+    azureSubscription: 'AzureSPN-Connection'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: 'az group list -o table'
+
